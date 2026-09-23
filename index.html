@@ -4,15 +4,193 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ثمن | THAMAN</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6f8;
+      color: #222;
+    }
+
+    header {
+      background: white;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 12px;
+      color: #777;
+      direction: ltr;
+    }
+
+    .login {
+      border: none;
+      background: #222;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+    }
+
+    .hero {
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #777;
+      margin-bottom: 22px;
+    }
+
+    .search {
+      background: white;
+      padding: 14px;
+      border-radius: 14px;
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    .add {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 15px auto;
+      padding: 15px;
+      background: #222;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 10px 20px 30px;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .category {
+      background: white;
+      padding: 18px 8px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 2px 7px rgba(0,0,0,.05);
+    }
+
+    .category div {
+      font-size: 25px;
+      margin-bottom: 7px;
+    }
+
+    footer {
+      background: white;
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>ثمن | THAMAN</h1>
-  <p>منصة البيع والشراء</p>
+  <header>
+    <div class="logo">
+      ثمن
+      <span>THAMAN</span>
+    </div>
 
-  <button>أضف إعلانك</button>
+    <button class="login">تسجيل الدخول</button>
+  </header>
 
-  <h2>أحدث الإعلانات</h2>
+  <section class="hero">
+    <h1>اشترِ وبِع بسهولة</h1>
+    <p>كل ما تبحث عنه في مكان واحد</p>
+
+    <input
+      class="search"
+      type="search"
+      placeholder="ابحث عن سيارة، جوال، عقار..."
+    >
+
+    <button class="add">+ أضف إعلانك</button>
+  </section>
+
+  <section class="section">
+    <h2>التصنيفات</h2>
+
+    <div class="categories">
+
+      <div class="category">
+        <div>📱</div>
+        جوالات
+      </div>
+
+      <div class="category">
+        <div>🚗</div>
+        سيارات
+      </div>
+
+      <div class="category">
+        <div>🏠</div>
+        عقارات
+      </div>
+
+      <div class="category">
+        <div>💻</div>
+        إلكترونيات
+      </div>
+
+      <div class="category">
+        <div>👕</div>
+        ملابس
+      </div>
+
+      <div class="category">
+        <div>📦</div>
+        أخرى
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 ثمن | THAMAN
+  </footer>
 
 </body>
 </html>
